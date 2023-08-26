@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: rgb(235, 230, 230);
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(235, 230, 230);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    background-color: black;
+    color: wheat;
+}
+
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-body .temp{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.weather-body .temp span{
+    font-size: 20px;
+    font-weight: 250;
+    position: absolute;
+}
+
+.weather-body .desc{
+    font-size: 20px;
+    font-weight: 400px;
+    text-transform: capitalize;
+}
+
+.weather-body img{
+    width: 60%;
+    height: auto;
+}
+
+.weather-desc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity{
+    display: flex;
+    margin-left: 20px;
+}
+
+.wind-speed{
+    display: flex;
+    margin-left: 20px;
+}
+
+.humidity i{
+    font-size: 30px;
+}
+
+.wind-speed i{
+    font-size: 30px;
+}
+
+.weather-desc .text{
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-not-found img{
+    margin-top: 20px;
+    width: 80%;
+}
