@@ -13,7 +13,7 @@ window.onload=function(){
     
     async function checkWeather(city)
     {
-        const api_key = config.api_key;
+        const api_key = "e25dd9f1980557faa2fadb2a7272099e";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
     
         const weather_data = await fetch(`${url}`).then(response => response.json());
